@@ -1,17 +1,18 @@
 pwd = []
-user = input("Enter your user name: ")
+user = input("Enter your username: ")
 password = input("Enter the password to create the account ")
 pass1 = input("Confirm your password ")
 if pass1 == password:
     pwd.append(pass1)
     print("Account created succesfully")
+    print(pwd)
 else:
-    print("Your pasword didn't match")
+    print("Your password didn't match")
 person = int(input("1. Log in\n2. Change password"))
 if person == 1:
-    user1 = input("Enter your user name: ")
-    password = input("Enter the password to create the account ")
-    if password == pwd and user == user1:
+    user1 = input("Enter your username: ")
+    password = input("Enter the password ")
+    if password == pass1 and user == user1:
         print("Log in succesfully")
     else:
         print("Incorrect log in details")
