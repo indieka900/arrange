@@ -17,8 +17,8 @@ while True:
                 num = (input("Enter the number: "))
                 if len(num) == 10:
                     a = int(input("Enter amount: "))
-                    import pin
-                    if pin is True:
+                    import pin2
+                    if pin2 is True:
                         print("You have sent Ksh",str(a),"to",num,"your balance is",str(amount-a))
                     break
                 else:
@@ -26,8 +26,8 @@ while True:
             elif j == 2:
                 name = input("Enter the name: ")
                 a = int(input("Enter amount: "))
-                import pin
-                if pin is True:
+                import pin2
+                if pin2 is True:
                     print("You have sent Ksh",str(a),"to",name,"your balance is ksh",str(amount-a))
                 break
             else:
@@ -37,8 +37,8 @@ while True:
             if k == 1:
                 agent = int(input("Enter The ATM number: "))
                 a = int(input("Enter amount: "))
-                import pin
-                if pin is True:
+                import pin2
+                if pin2 is True:
                     print("You have withdraw ksh",str(a),"from",agent)
                 else:
                     break
